@@ -12,6 +12,7 @@ function compute()
     var years = document.getElementById("years").value;
     if(principal <=0) {
       alert("Enter a positive number");
+      document.getElementById("principal").focus();
     }else {
     var interest = principal*years*rate/100;
     var actual_year = 2021 + parseInt(years);
